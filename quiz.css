@@ -1,4 +1,32 @@
-.listQuestions__item--disabled{
-    opacity: .5;
+.listaPerguntas__item--inativo {
+    opacity: 0.5;
     cursor: default;
+}
+
+.botao.respondido {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pergunta{
+    margin: 0; /*senão a pergunta no <span> fica embaixo do número*/
+}
+
+.ativo{
+    transition: 0.3s;
+}
+
+.ativo:hover{
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+.botao--correto {
+    background-color: #56a756; /* Cor verde para botão correto */
+    color: white; /* Texto branco */
+}
+
+.botao--incorreto {
+    background-color: #b12c2c; /* Cor vermelha para botão incorreto */
+    color: white; /* Texto branco */
 }
