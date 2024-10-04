@@ -1,13 +1,14 @@
 // de novo agradeçam o chatgpt e não eu porque eu sou uma negação em js (eu fiz o html pelo menos e so pedi pra ele escrever isso)
 // eu vou deixar os comentários dele pra vcs entenderem mas quando o código for portado pro site de vdd pfv tirem 💔
 
+// seleciona todas as perguntas e o resultado final depois de todas as respostas
 const perguntas = document.querySelectorAll('.listaPerguntas__item');
 const resultadoDiv = document.querySelector('.resultado');
 
 // Inicializa todas as perguntas como inativas, exceto a primeira
 document.addEventListener('DOMContentLoaded', () => {
     perguntas.forEach((pergunta, index) => {
-        if (index > 0) { // Aplica a classe apenas nas perguntas que não são a primeira
+        if (index > 0) { // Aplica a classe apenas nas perguntas que não são a primeira (no caso a primeira tem index=0 pelo que eu entendo)
             pergunta.classList.add('listaPerguntas__item--inativo');
         }
     });

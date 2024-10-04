@@ -7,7 +7,6 @@
     <title>exemplo do quiz</title>
 </head>
 <body>
-    <!--nota pra mim msm: OLHA PRA PRIMEIRA PERGUNTA TODAS AS ANOTAÇÕES TÃO LÁ NÃO COPIA NAS OUTRAS FICA FEIO-->
     <p>Agora me diga, você é uma pessoa sustentável? Os desafios da sustentabilidade são muito grandes e difíceis de se resolver sozinho. Entretanto, se todos se juntarem e cada um fazer do seu dia a dia um dia mais sustentável, o mundo pode ser mudado aos poucos! Cuidar do planeta é uma aventura! Aqui vão algumas dicas rápidas: economize água fechando a torneira ao escovar os dentes e use sacolas reutilizáveis. Apoie produtores locais e ande de bicicleta para explorar. Separe seu lixo para reciclar e pergunte-se se precisa de algo novo antes de comprar. Plante uma sementinha e cuide de uma planta em casa. Desligue luzes e aparelhos quando não estiver usando. Com essas pequenas mudanças, você ajuda a salvar o planeta! Vamos juntos nessa missão?</p>
     <ol class="listaPerguntas">
         <li class="listaPerguntas__item">
@@ -15,12 +14,11 @@
                 <p>Pode jogar óleo na pia?</p>
             </span>
             <div class="formatacao">
-                <!--classe 'ativo' dos botões vai ser apagada/mudada para 'inativo' se o usuário não tiver chegado na questão e 'respondido' se a questão tiver sido respondida-->
                 <button class="botao ativo" number="1" value="f" count="10">Sim</button>
                 <button class="botao ativo" number="1" value="v" count="10">Não</button>
             </div>
             <div class="resposta resposta--certa resposta--incorreta" style="display:none" number="1">
-                <p class="resposta__mensagem mensagem"></p><!--MODIFICADO COM JS (Resposta certa!/Resposta errada!)-->
+                <p class="resposta__mensagem mensagem"></p>
                 <p class="resposta__mensagem resposta--explicacao">Não jogue óleo na pia! Ele pode entupir os canos e sujar os rios, machucando os peixes e outros animais. Em vez disso, coloque o óleo em uma garrafa e leve para um lugar onde ele possa ser reciclado e transformado em outras coisas úteis.</p>
             </div>
         </li>
