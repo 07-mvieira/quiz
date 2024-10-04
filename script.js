@@ -1,5 +1,5 @@
 // de novo agradeçam o chatgpt e não eu porque eu sou uma negação em js (eu fiz o html pelo menos e so pedi pra ele escrever isso)
-// eu vou deixar os comentários dele pra vcs entenderem mas quando o código for portado pro site de vdd pfv tirem 💔
+// eu vou deixar os comentários dele pra nós entendermos mas quando o código for portado pro site de vdd pfv tirem 💔
 
 // seleciona todas as perguntas e o resultado final depois de todas as respostas
 const perguntas = document.querySelectorAll('.listaPerguntas__item');
