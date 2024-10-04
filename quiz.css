@@ -1,0 +1,4 @@
+.listQuestions__item--disabled{
+    opacity: .5;
+    cursor: default;
+}
