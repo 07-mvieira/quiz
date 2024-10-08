@@ -1,3 +1,49 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url(font/Ubuntu-Regular.ttf);
+}
+
+body{
+    font-family: Ubuntu, sans-serif;
+    background-color: #77ba77;
+    font-size: 18px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.listaPerguntas__item{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+.pergunta.formatacao.resposta{
+    display: block;
+}
+
+.formatacao{
+    text-align: center;
+}
+
+.pergunta{
+    font-size: 20px;
+}
+
+.botao{
+    width: 170px;
+    height: 90px;
+    background-color: rgb(112, 222, 252);
+    border: 3px #242546;
+    border-radius: 10px;
+    font-family: Ubuntu, sans-serif;
+}
+
+.fonte-grande{
+    font-size: 18px;
+}
+
+/*css funcional*/
+
 .listaPerguntas__item--inativo {
     opacity: 0.5;
     cursor: default;
@@ -17,12 +63,12 @@
 }
 
 .ativo:hover{
-    background-color: black;
+    background-color: rgb(37, 127, 186);
     color: rgb(255, 255, 255);
 }
 
 .botao--correto {
-    background-color: #56a756; /* Cor verde para botão correto */
+    background-color: #388738; /* Cor verde para botão correto */
     color: white; /* Texto branco */
 }
 
