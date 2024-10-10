@@ -7,15 +7,16 @@
     <title>exemplo do quiz</title>
 </head>
 <body>
-    <p>Agora me diga, você é uma pessoa sustentável? Os desafios da sustentabilidade são muito grandes e difíceis de se resolver sozinho. Entretanto, se todos se juntarem e cada um fazer do seu dia a dia um dia mais sustentável, o mundo pode ser mudado aos poucos! Cuidar do planeta é uma aventura! Aqui vão algumas dicas rápidas: economize água fechando a torneira ao escovar os dentes e use sacolas reutilizáveis. Apoie produtores locais e ande de bicicleta para explorar. Separe seu lixo para reciclar e pergunte-se se precisa de algo novo antes de comprar. Plante uma sementinha e cuide de uma planta em casa. Desligue luzes e aparelhos quando não estiver usando. Com essas pequenas mudanças, você ajuda a salvar o planeta! Vamos juntos nessa missão?</p>
+    <p id="quiz__intro">Agora me diga, você é uma pessoa sustentável? Os desafios da sustentabilidade são muito grandes e difíceis de se resolver sozinho. Entretanto, se todos se juntarem e cada um fazer do seu dia a dia um dia mais sustentável, o mundo pode ser mudado aos poucos! Cuidar do planeta é uma aventura! Aqui vão algumas dicas rápidas: economize água fechando a torneira ao escovar os dentes e use sacolas reutilizáveis. Apoie produtores locais e ande de bicicleta para explorar. Separe seu lixo para reciclar e pergunte-se se precisa de algo novo antes de comprar. Plante uma sementinha e cuide de uma planta em casa. Desligue luzes e aparelhos quando não estiver usando. Com essas pequenas mudanças, você ajuda a salvar o planeta! Vamos juntos nessa missão?</p>
+    <hr>
     <ol class="listaPerguntas">
         <li class="listaPerguntas__item">
             <span class="pergunta">
                 <p>Pode jogar óleo na pia?</p>
             </span>
-            <div class="formatacao">
-                <button class="botao ativo fonte-grande" number="1" value="f" count="10">Sim</button>
-                <button class="botao ativo fonte-grande" number="1" value="v" count="10">Não</button>
+            <div class="botoes__formatacao">
+                <button class="botao ativo" number="1" value="f" count="10">Sim</button>
+                <button class="botao ativo" number="1" value="v" count="10">Não</button>
             </div>
             <div class="resposta resposta--certa resposta--incorreta" style="display:none" number="1">
                 <p class="resposta__mensagem mensagem"></p>
@@ -27,9 +28,9 @@
             <span class="pergunta">
                 <p>Vidros mal-embalados representam um risco para os coletores e geram acidentes?</p>
             </span>
-            <div class="formatacao">
-                <button class="botao ativo fonte-grande" number="2" value="v" count="10">Sim</button>
-                <button class="botao ativo fonte-grande" number="2" value="f" count="10">Não</button>
+            <div class="botoes__formatacao">
+                <button class="botao ativo" number="2" value="v" count="10">Sim</button>
+                <button class="botao ativo" number="2" value="f" count="10">Não</button>
             </div>
             
             <div class="resposta resposta--certa resposta--incorreta" style="display:none" number="1">
@@ -42,9 +43,9 @@
             <span class="pergunta">
                 <p>A sustentabilidade abrange ambiente, sociedade e economia.</p>
             </span>
-            <div class="formatacao">
-                <button class="botao ativo fonte-grande" number="3" value="v" count="10">Verdadeiro</button>
-                <button class="botao ativo fonte-grande" number="3" value="f" count="10">Falso</button>
+            <div class="botoes__formatacao">
+                <button class="botao ativo" number="3" value="v" count="10">Verdadeiro</button>
+                <button class="botao ativo" number="3" value="f" count="10">Falso</button>
             </div>
             
             <div class="resposta resposta--certa resposta--incorreta" style="display:none" number="1">
@@ -57,10 +58,10 @@
             <span class="pergunta">
                 <p>Fenômeno responsável pelo aumento da temperatura da terra.</p>
             </span>
-            <div class="formatacao">
-                <button class="botao ativo fonte-grande" number="4" value="v" count="10">Aquecimento global</button>
-                <button class="botao ativo fonte-grande" number="4" value="f" count="10">Meio ambiente</button>
-                <button class="botao ativo fonte-grande" number="4" value="f" count="10">Sustentabilidade</button>
+            <div class="botoes__formatacao">
+                <button class="botao ativo" number="4" value="v" count="10">Aquecimento global</button>
+                <button class="botao ativo" number="4" value="f" count="10">Meio ambiente</button>
+                <button class="botao ativo" number="4" value="f" count="10">Sustentabilidade</button>
             </div>
             
             <div class="resposta resposta--certa resposta--incorreta" style="display:none" number="1">
@@ -74,7 +75,7 @@
                 <p>Ѕераrаr о lіхо оrgânісо (rеѕtоѕ dе аlіmеntоѕ, рареl ѕuјо е lіхо ѕаnіtárіо) dоѕ rеѕíduоѕ ѕólіdоѕ (соmо рláѕtісо, vіdrо, рареl, mеtаl е еmbаlаgеnѕ lоngа vіdа), é а fоrmа соrrеtа dе ѕераrаr о lіхо.</p>
                 <!--se essa pergunta tiver com umas caixas amarelas ao redor de letras aleatórias não me pergunte eu tbm n faço ideia do q ta acontecedo-->
             </span>
-            <div class="formatacao">
+            <div class="botoes__formatacao">
                 <button class="botao ativo" number="5" value="v" count="10">Sim, pois ajuda na reciclagem.</button>
                 <button class="botao ativo" number="5" value="f" count="10">Não, isso atrapalha a reciclagem.</button>
             </div>
@@ -89,9 +90,9 @@
             <span class="pergunta">
                 <p>Uma das formas de colaborar com a preservação do meio ambiente é reduzir a produção de resíduos. Mas como?</p>
             </span>
-            <div class="formatacao">
-                <button class="botao ativo" number="6" value="v" count="10">Optando pela compra de produtos com embalagens recicláveis.</button>
-                <button class="botao ativo" number="6" value="v" count="10">Reutilizando os materiais e objetos sempre que possível.</button>
+            <div class="botoes__formatacao">
+                <button class="botao ativo fonte-pequena" number="6" value="v" count="10">Optando pela compra de produtos com embalagens recicláveis.</button>
+                <button class="botao ativo fonte-pequena" number="6" value="v" count="10">Reutilizando os materiais e objetos sempre que possível.</button>
                 <button class="botao ativo" number="6" value="v" count="10">Apoiando iniciativas de reciclagem.</button>
                 <button class="botao ativo" number="6" value="v" count="10">Todas estão corretas</button>
             </div>
@@ -106,8 +107,8 @@
             <span class="pergunta">
                 <p>O que melhor define sustentabilidade?</p>
             </span>
-            <div class="formatacao">
-                <button class="botao ativo" number="7" value="v" count="10">Suprir necessidades do presente sem esgotar recursos para o futuro.</button>
+            <div class="botoes__formatacao">
+                <button class="botao ativo fonte-pequena" number="7" value="v" count="10">Suprir necessidades do presente sem esgotar recursos para o futuro.</button>
                 <button class="botao ativo" number="7" value="f" count="10">Consumir muitos recursos.</button>
                 <button class="botao ativo" number="7" value="f" count="10">Não usar energias renováveis.</button>
             </div>
@@ -122,7 +123,7 @@
             <span class="pergunta">
                 <p>Qual das opções não é uma energia renovável?</p>
             </span>
-            <div class="formatacao">
+            <div class="botoes__formatacao">
                 <button class="botao ativo" number="8" value="f" count="10">Hídrica</button>
                 <button class="botao ativo" number="8" value="f" count="10">Solar</button>
                 <button class="botao ativo" number="8" value="v" count="10">Gás natural</button>
@@ -139,10 +140,10 @@
             <span class="pergunta">
                 <p>O que são os Objetivos de Desenvolvimento Sustentável (ODS)?</p>
             </span>
-            <div class="formatacao">
-                <button class="botao ativo" number="9" value="v" count="10">17 objetivos propostos pela ONU para melhorar o mundo.</button>
-                <button class="botao ativo" number="9" value="f" count="10">17 objetivos para construir novas indústrias de petróleo.</button>
-                <button class="botao ativo" number="9" value="f" count="10">25 objetivos para tirar notas melhores na escola.</button>
+            <div class="botoes__formatacao">
+                <button class="botao ativo fonte-pequena" number="9" value="v" count="10">17 objetivos propostos pela ONU para melhorar o mundo.</button>
+                <button class="botao ativo fonte-pequena" number="9" value="f" count="10">17 objetivos para construir novas indústrias de petróleo.</button>
+                <button class="botao ativo fonte-pequena" number="9" value="f" count="10">25 objetivos para tirar notas melhores na escola.</button>
             </div>
             
             <div class="resposta resposta--certa resposta--incorreta" style="display:none" number="1">
@@ -155,8 +156,8 @@
             <span class="pergunta">
                 <p>Quais produtos são mais sustentáveis?</p>
             </span>
-            <div class="formatacao">
-                <button class="botao ativo" number="10" value="v" count="10">Produtos que se decompõem facilmente compostos por elementos orgânicos</button>
+            <div class="botoes__formatacao">
+                <button class="botao ativo fonte-pequena" number="10" value="v" count="10">Produtos que se decompõem facilmente compostos por elementos orgânicos</button>
                 <button class="botao ativo" number="10" value="f" count="10">Produtos químicos</button>
                 <button class="botao ativo" number="10" value="f" count="10">Plástico</button>
             </div>

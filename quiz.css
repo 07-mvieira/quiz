@@ -11,6 +11,13 @@ body{
     padding-right: 10%;
 }
 
+#quiz__intro{
+}
+
+hr{
+    border-color: #153b71;
+}
+
 .listaPerguntas__item{
     display: flexbox;
     justify-content: center;
@@ -21,8 +28,10 @@ body{
     display: block;
 }
 
-.formatacao{
+.botoes__formatacao{
+    display: inline-flex;
     text-align: center;
+    height: 90px;
 }
 
 .pergunta{
@@ -31,15 +40,19 @@ body{
 
 .botao{
     width: 170px;
-    height: 90px;
-    background-color: rgb(112, 222, 252);
+    height: 85px;
+    background-color: #70defc;
     border: 3px #242546;
     border-radius: 10px;
     font-family: Ubuntu, sans-serif;
+    margin-left: 0;
+    margin-right: 2vw;
+    font-size: 18px;
+    box-shadow: inset -5px -5px #5cbad3
 }
 
-.fonte-grande{
-    font-size: 18px;
+.fonte-pequena{
+    font-size: 14px;
 }
 
 /*css funcional*/
@@ -63,16 +76,19 @@ body{
 }
 
 .ativo:hover{
-    background-color: rgb(37, 127, 186);
-    color: rgb(255, 255, 255);
+    background-color: #3d91c9;
+    box-shadow: inset -5px -5px #31709a;
+    color: #ffffff;
 }
 
 .botao--correto {
-    background-color: #388738; /* Cor verde para botão correto */
-    color: white; /* Texto branco */
+    background-color: #388738;
+    box-shadow: inset -5px -5px #275c27;
+    color: white;
 }
 
 .botao--incorreto {
-    background-color: #b12c2c; /* Cor vermelha para botão incorreto */
-    color: white; /* Texto branco */
+    background-color: #b12c2c;
+    box-shadow: inset -5px -5px #812020;
+    color: white;
 }
