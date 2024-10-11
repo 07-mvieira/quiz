@@ -12,9 +12,53 @@ body{
     background-color: #000;/*#44aaf4;*/
     background-image: url(files/hubble-xdf.jpg);
     font-size: 18px;
+    justify-content: center;
+}
+
+header{
+    display: flex;
+    background-color: #6bb3b8;
+    align-items: center;
+    width: calc(100%-9vw);
+    color: white;
+    padding: 16px;
+    padding-left: 9vw;
+    padding-right: 9vw;
+}
+
+header a{
+    text-decoration: none;
+}
+
+#home{
+    white-space: nowrap;
+}
+
+#links-internos{ /*nav*/
+    display: inline;
+    margin-left: 30vw;
+    white-space: nowrap;
+}
+
+.links__item{
+    font-size: 24px;
+    display: inline;
+    color: inherit;
+    margin-left: 1.8vw;
+    margin-right: 1.8vw;
+    transition: 0.1s;
+    padding: 4px;
+}
+
+.links__item:hover{
+    background-color: #0000001d;
+    border-radius: 6px;
+}
+
+article{
     padding-left: 10%;
     padding-right: 10%;
-    margin: 0;
+    justify-content: center;
 }
 
 #quiz__intro{
@@ -26,6 +70,9 @@ body{
 }
 
 #quiz__intro p{
+    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: left;
 }
 
@@ -38,6 +85,9 @@ hr{
 .listaPerguntas{
     background-color: #77ba77;
     padding-top: 10px;
+    padding-left: auto;
+    padding-right: 40px;
+    padding-bottom: 30px;
     margin: 0;
 }
 
@@ -48,8 +98,9 @@ hr{
 }
 
 .pergunta{
-    margin-top: 23px;
-    margin-bottom: 23px;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .pergunta.formatacao.resposta{
@@ -60,6 +111,7 @@ hr{
     display: inline-flex;
     text-align: center;
     height: 90px;
+    margin: 0;
 }
 
 .botao{
@@ -87,6 +139,37 @@ hr{
     border-radius: 7px;
     box-shadow: inset -4px -4px #a48e72;
 }
+
+.mensagem{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.resultado{
+    background-color: #b7e5dd; /*#98f1e9;*/
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+.resultado p{
+    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+/*footer{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: #151515;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+}/*
 
 /*css funcional*/
 
