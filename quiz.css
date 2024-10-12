@@ -16,14 +16,13 @@ body{
 }
 
 header{
-    display: flex;
-    background-color: #6bb3b8;
-    align-items: center;
-    width: calc(100%-9vw);
+    background-color: #278b53;
+    width: calc(100%-16px);
+    overflow: hidden;
     color: white;
     padding: 16px;
-    padding-left: 9vw;
-    padding-right: 9vw;
+    padding-left: 70px;
+    padding-right: 100px;
 }
 
 header a{
@@ -31,23 +30,25 @@ header a{
 }
 
 #home{
-    white-space: nowrap;
+    float: left;
+    text-align: center;
 }
 
-#links-internos{ /*nav*/
-    display: inline;
-    margin-left: 30vw;
-    white-space: nowrap;
+#links-internos{
+    display: flex;
+    float: right;
+    transform: translateY(60%);
 }
 
 .links__item{
     font-size: 24px;
-    display: inline;
+    display: flex;
     color: inherit;
-    margin-left: 1.8vw;
-    margin-right: 1.8vw;
-    transition: 0.1s;
     padding: 4px;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    float: right;
+    transition: 0.1s;
 }
 
 .links__item:hover{
@@ -62,18 +63,24 @@ article{
 }
 
 #quiz__intro{
-    background-color: #abe1ab;
+    background-color: #134065;
     justify-content: center;
-    width: 100%;
+    width: calc(100%-30px);
     max-width: 100%;
+    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin: 0;
 }
 
 #quiz__intro p{
-    padding: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    color: white;
     text-align: left;
+    margin: 7pt;
+}
+
+#quiz__intro strong{
+    font-size: 95%;
 }
 
 hr{
@@ -83,7 +90,7 @@ hr{
 
 
 .listaPerguntas{
-    background-color: #77ba77;
+    background-color: #54a854;
     padding-top: 10px;
     padding-left: auto;
     padding-right: 40px;
@@ -95,9 +102,15 @@ hr{
     display: flexbox;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.listaPerguntas__item::marker{
+    color: white;
 }
 
 .pergunta{
+    color: white;
     display: block;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -108,7 +121,8 @@ hr{
 }
 
 .botoes__formatacao{
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
     height: 90px;
     margin: 0;
@@ -116,6 +130,7 @@ hr{
 
 .botao{
     width: 170px;
+    max-width: 170px;
     height: 85px;
     background-color: #70defc;
     border: 3px #242546;
@@ -124,7 +139,8 @@ hr{
     margin-left: 0;
     margin-right: 2vw;
     font-size: 18px;
-    box-shadow: inset -5px -5px #5cbad3
+    box-shadow: inset -5px -5px #5c9fd3;
+    flex: 1 0 150px;
 }
 
 .fonte-pequena{
@@ -135,6 +151,7 @@ hr{
     display: flex;
     align-self: center;
     padding: 20px;
+    margin-top: 10px;
     background-color: #e5d0b7;
     border-radius: 7px;
     box-shadow: inset -4px -4px #a48e72;
@@ -193,18 +210,18 @@ hr{
 
 .ativo:hover{
     background-color: #3d91c9;
-    box-shadow: inset -5px -5px #31709a;
+    box-shadow: inset -5px -5px #31569a;
     color: #ffffff;
 }
 
 .botao--correto {
-    background-color: #388738;
-    box-shadow: inset -5px -5px #275c27;
+    background-color: #00d134;
+    box-shadow: inset -5px -5px #1b9429;
     color: white;
 }
 
 .botao--incorreto {
-    background-color: #b12c2c;
-    box-shadow: inset -5px -5px #812020;
+    background-color: #c63333;
+    box-shadow: inset -5px -5px #a6203f;
     color: white;
 }
