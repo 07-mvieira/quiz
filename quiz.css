@@ -17,12 +17,17 @@ body{
 
 header{
     background-color: #278b53;
-    width: calc(100%-16px);
+    width: calc(100%);
     overflow: hidden;
     color: white;
-    padding: 16px;
-    padding-left: 70px;
+    padding: 8px;
+    padding-left: 100px;
     padding-right: 100px;
+    position: fixed;
+    align-content: center;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
 header a{
@@ -30,14 +35,17 @@ header a{
 }
 
 #home{
+    transform: translateY(2px);
     float: left;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 #links-internos{
     display: flex;
-    float: right;
-    transform: translateY(60%);
+    transform: translateY(12px);
+    justify-content: right;
 }
 
 .links__item{
@@ -45,9 +53,8 @@ header a{
     display: flex;
     color: inherit;
     padding: 4px;
-    margin-left: 3vw;
-    margin-right: 3vw;
-    float: right;
+    margin-left: 24px;
+    margin-right: 24px;
     transition: 0.1s;
 }
 
@@ -57,6 +64,7 @@ header a{
 }
 
 article{
+    margin-top: 79px;
     padding-left: 10%;
     padding-right: 10%;
     justify-content: center;
