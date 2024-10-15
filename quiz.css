@@ -46,6 +46,7 @@ header a{
     display: flex;
     transform: translateY(12px);
     justify-content: right;
+    padding-right: 200px;
 }
 
 .links__item{
@@ -53,8 +54,8 @@ header a{
     display: flex;
     color: inherit;
     padding: 4px;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-left: 3%;
+    margin-right: 3%;
     transition: 0.1s;
 }
 
@@ -98,7 +99,7 @@ hr{
 
 
 .listaPerguntas{
-    background-color: #54a854;
+    background-color: #498e49;
     padding-top: 10px;
     padding-left: auto;
     padding-right: 40px;
@@ -185,6 +186,10 @@ hr{
     text-align: left;
 }
 
+strong{
+    font-size: 95%;
+}
+
 /*footer{
     display: flex;
     height: 80px;
@@ -203,11 +208,6 @@ hr{
     cursor: default;
 }
 
-.botao.respondido {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
 .pergunta{
     margin: 0; /*senão a pergunta no <span> fica embaixo do número*/
 }
@@ -223,8 +223,8 @@ hr{
 }
 
 .botao--correto {
-    background-color: #00d134;
-    box-shadow: inset -5px -5px #1b9429;
+    background-color: #00c030;
+    box-shadow: inset -5px -5px #1c8e35;
     color: white;
 }
 
