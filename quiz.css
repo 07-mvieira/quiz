@@ -54,8 +54,10 @@ header a{
     display: flex;
     color: inherit;
     padding: 4px;
-    margin-left: 3%;
-    margin-right: 3%;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     transition: 0.1s;
 }
 
