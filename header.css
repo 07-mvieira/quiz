@@ -11,7 +11,7 @@ header{
     top: 0;
     left: 0;
     z-index: 100;
-    transition: top 0.7s;
+    transition: top 0.5s;
 }
 
 header a{
