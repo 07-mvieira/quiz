@@ -75,9 +75,11 @@ hr{
 
 .pergunta{
     color: white;
+    font-weight: bold;
     display: block;
     padding-top: 15px;
     padding-bottom: 15px;
+    margin: 0; /*senão a pergunta no <span> fica embaixo do número*/
 }
 
 .pergunta.formatacao.resposta{
@@ -148,6 +150,7 @@ strong{
 /*footer{
     display: flex;
     height: 80px;
+    bottom: 0;
     width: 100%;
     background-color: #151515;
     justify-content: center;
@@ -163,12 +166,8 @@ strong{
     cursor: default;
 }
 
-.pergunta{
-    margin: 0; /*senão a pergunta no <span> fica embaixo do número*/
-}
-
 .ativo{
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .ativo:hover{
@@ -185,6 +184,6 @@ strong{
 
 .botao--incorreto {
     background-color: #c63333;
-    box-shadow: inset -5px -5px #a6203f;
+    box-shadow: inset -5px -5px #9b1e3b;
     color: white;
 }
