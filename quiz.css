@@ -27,6 +27,7 @@ article{
 }
 
 #quiz__intro{
+    background-image: linear-gradient(#175378, #134065);
     background-color: #134065;
     justify-content: center;
     width: calc(100%-30px);
@@ -54,6 +55,7 @@ hr{
 
 
 .listaPerguntas{
+    background-image: linear-gradient(#498e49, #40854d);
     background-color: #498e49;
     padding-top: 10px;
     padding-left: auto;
@@ -98,14 +100,33 @@ hr{
     max-width: 170px;
     height: 85px;
     background-color: #70defc;
+    box-shadow: inset -5px -5px #5c9fd3;
     border: 3px #242546;
     border-radius: 10px;
     font-family: Ubuntu, sans-serif;
     margin-left: 0;
     margin-right: 2vw;
     font-size: 18px;
-    box-shadow: inset -5px -5px #5c9fd3;
     flex: 1 0 150px;
+    transition: 0.05s;
+}
+
+.botao:disabled{
+    background-color: #91bac6;
+    box-shadow: inset -5px -5px #7690a4;
+    color: #000000;
+}
+
+.botao--correto:disabled {
+    background-color: #00c030;
+    box-shadow: inset -5px -5px #1a7f30;
+    color: white;
+}
+
+.botao--incorreto:disabled {
+    background-color: #d22334;
+    box-shadow: inset -5px -5px #9b1e3b;
+    color: white;
 }
 
 .fonte-pequena{
@@ -128,6 +149,7 @@ hr{
 }
 
 .resultado{
+    background-image: linear-gradient(#aaddd5, #98f1e9);
     background-color: #b7e5dd; /*#98f1e9;*/
     justify-content: center;
     width: 100%;
@@ -156,14 +178,8 @@ strong{
     align-items: center;
     color: white;
     font-size: 12px;
-}/*
+}*/
 
-/*css funcional*/
-
-.listaPerguntas__item--inativo {
-    opacity: 0.5;
-    cursor: default;
-}
 
 .ativo{
     transition: 0.2s;
@@ -173,16 +189,4 @@ strong{
     background-color: #3d91c9;
     box-shadow: inset -5px -5px #31569a;
     color: #ffffff;
-}
-
-.botao--correto {
-    background-color: #00c030;
-    box-shadow: inset -5px -5px #1a7f30;
-    color: white;
-}
-
-.botao--incorreto {
-    background-color: #d22334;
-    box-shadow: inset -5px -5px #9b1e3b;
-    color: white;
 }

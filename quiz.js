@@ -1,21 +1,18 @@
 const perguntas = document.querySelectorAll('.listaPerguntas__item');
 const resultadoDiv = document.querySelector('.resultado');
+let perguntasRespondidas = 0
 
 document.addEventListener('DOMContentLoaded', () => {
-    perguntas.forEach((pergunta, index) => {
-        if (index > 0) {
-            pergunta.classList.add('listaPerguntas__item--inativo');
-        }
-    });
 });
 
 perguntas.forEach(pergunta => {
     const botoes = pergunta.querySelectorAll('.botao');
     botoes.forEach(botao => {
         botao.addEventListener('click', () => {
-            pergunta.classList.remove('listaPerguntas__item--inativo');
             pergunta.classList.add('respondida');
-
+            perguntasRespondidas++
+            console.log("perguntas respondidas: ",perguntasRespondidas);
+            
             const resposta = pergunta.querySelector('.resposta');
             resposta.style.display = 'block';
             resposta.querySelector('.resposta__mensagem').textContent = botao.value === 'v' ? 'Resposta certa!' : 'Resposta errada!';
@@ -37,10 +34,7 @@ perguntas.forEach(pergunta => {
                 b.classList.remove('ativo');
             });
 
-            const nextPergunta = Array.from(perguntas).find(p => p.classList.contains('listaPerguntas__item--inativo'));
-            if (nextPergunta) {
-                nextPergunta.classList.remove('listaPerguntas__item--inativo');
-            } else {
+            if (perguntasRespondidas==10) {
                 resultadoDiv.style.display = 'block';
             }
         });
