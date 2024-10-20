@@ -11,7 +11,7 @@ perguntas.forEach(pergunta => {
         botao.addEventListener('click', () => {
             pergunta.classList.add('respondida');
             perguntasRespondidas++
-            console.log("perguntas respondidas: ",perguntasRespondidas);
+            console.log("perguntas respondidas:",perguntasRespondidas);
             
             const resposta = pergunta.querySelector('.resposta');
             resposta.style.display = 'block';
