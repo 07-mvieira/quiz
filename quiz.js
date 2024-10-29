@@ -1,6 +1,6 @@
 const perguntas = document.querySelectorAll('.listaPerguntas__item');
 const resultadoDiv = document.querySelector('.resultado');
-let perguntasRespondidas = 0
+let perguntasRespondidas = 9
 
 document.addEventListener('DOMContentLoaded', () => {
 });
@@ -28,14 +28,14 @@ perguntas.forEach(pergunta => {
             } else {
                 botao.classList.add('botao--incorreto');
             }
-
+            
             botoes.forEach(b => {
                 b.disabled = true;
                 b.classList.remove('ativo');
             });
 
             if (perguntasRespondidas==10) {
-                resultadoDiv.style.display = 'block';
+                resultadoDiv.style.display = 'flex';
             }
         });
     });
